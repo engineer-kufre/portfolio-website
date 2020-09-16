@@ -1,0 +1,70 @@
+﻿@model Person
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - portfolio</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark mb-3">
+            <div class="container">
+                <a class="navbar-brand text-dark" asp-area="" asp-page="/Index">@Model.Logo</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <img class="background-img" src="~/imgs/workplace-2303851_1920 1.jpg" alt="Background Image" />
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted">
+        <div id="contact">
+            <div>
+                <a href="https://github.com/engineer-kufre"><img class="github-img" src="~/imgs/github-icon.png" alt="Github Image" /></a>
+            </div>
+            <div>
+                <a href="https://www.facebook.com/ita.kufreabasi"><img class="facebook-img" src="~/imgs/Facebook-2-icon.png" alt="Facebook Image" /></a>
+            </div>
+            <div>
+                <a href="https://www.linkedin.com/in/kufreabasiita/"><img class="linkedin-img" src="~/imgs/Logos-Linkedin-icon.png" alt="LinkedIn Image" /></a>
+            </div>
+            <div>
+                <a href="https://twitter.com/bastion_music"><img class="twitter-img" src="~/imgs/twitter-icon.png" alt="Twitter Image" /></a>
+            </div>
+        </div>
+        <div class="container text-center">
+            &copy 2020 @Model.Logo. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

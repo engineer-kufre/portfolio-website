@@ -1,0 +1,58 @@
+﻿@model Person
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@* ----------------------HEADER SECTION--------------------------- *@
+<div class="container">
+    <div class="head">
+        <h1 class="display-4">@Model.FirstName @Model.LastName</h1>
+        <p>Hello! My name is @Model.FirstName @Model.LastName and I am a software engineer.</p>
+        <div>
+            @foreach (var item in Model.proficientPrograms)
+            {
+                <p>@item.pLanguageName</p>
+            }
+        </div>
+        <a class="butt" href="#contact">Contact Me!</a>
+    </div>
+</div>
+
+@* ----------------------ABOUT ME SECTION--------------------------- *@
+<div id="about">
+    <div class="fore fore1"></div>
+    <div class="fore fore2"></div>
+    <div class="fore fore3"></div>
+    <div class="fore fore4"></div>
+    <div class="container">
+        <h2 class="text-center">About Me</h2>
+        <p>
+            Alright then! I have garnered experience with JavaScript, Python and C# programming languages and built demo projects with Django and ASP.NET Core frameworks and worked with Microsoft SQLServer database.
+        </p>
+        <p>
+            I developed a passion for programming because of my ability to think logically and critically. I fell so deeply in love with software engineering that I was willing to give up a 6 year career as a Design Engineer. I am, infact, a COREN registered engineer. At the moment, I am interning at Decagon Institute. Here, I am quickly learning what it takes to become a worldclass, fullstack .NET engineer.
+        </p>
+        <p>
+            In my spare time, I enjoy watching documentaries, playing my guitar and taking Spanish lessons.
+        </p>
+    </div>
+</div>
+
+@* ----------------------EDUCATION SECTION--------------------------- *@
+<div class="container">
+    <div id="education">
+        <h2 class="text-center">Education</h2>
+        <div class="education">
+            <ul>
+                @foreach (var item in Model.education)
+                {
+                    <li>
+                        @item.obtained at @item.schoolName (@item.startDate - @item.endDate)
+                    </li>
+                }
+            </ul>
+            <img class="edu-img" src="~/imgs/circle-cropped.png" alt="Education Image" />
+        </div>
+    </div>
+</div>
+
