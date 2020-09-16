@@ -32,8 +32,12 @@ namespace portfolioTask.Controllers
             }
             else
             {
-                return View("Error"); 
+                return RedirectToAction("ProfileNotFound"); 
             }
+        }
+        public IActionResult ProfileNotFound()
+        {
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

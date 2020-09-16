@@ -13,7 +13,14 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark mb-3">
             <div class="container">
-                <a class="navbar-brand text-dark" asp-area="" asp-page="/Index">@Model.Logo</a>
+                @if (Model != null)
+                {
+                    <a class="navbar-brand text-dark" asp-area="" asp-page="/Index">@Model.Logo</a>
+                }
+                else
+                {
+                    <a class="navbar-brand text-dark" asp-area="" asp-page="/Index">Not Found</a>
+                }
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,25 +48,29 @@
         @RenderBody()
     </main>
 
-    <footer class="border-top footer text-muted">
-        <div id="contact">
-            <div>
-                <a href="https://github.com/engineer-kufre"><img class="github-img" src="~/imgs/github-icon.png" alt="Github Image" /></a>
+    @if (Model != null)
+    {
+        <footer class="border-top footer text-muted">
+            <div id="contact">
+                <div>
+                    <a href="https://github.com/engineer-kufre"><img class="github-img" src="~/imgs/github-icon.png" alt="Github Image" /></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/ita.kufreabasi"><img class="facebook-img" src="~/imgs/Facebook-2-icon.png" alt="Facebook Image" /></a>
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/kufreabasiita/"><img class="linkedin-img" src="~/imgs/Logos-Linkedin-icon.png" alt="LinkedIn Image" /></a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/bastion_music"><img class="twitter-img" src="~/imgs/twitter-icon.png" alt="Twitter Image" /></a>
+                </div>
             </div>
-            <div>
-                <a href="https://www.facebook.com/ita.kufreabasi"><img class="facebook-img" src="~/imgs/Facebook-2-icon.png" alt="Facebook Image" /></a>
+            <div class="container text-center">
+                &copy 2020 @Model.Logo. All Rights Reserved.
             </div>
-            <div>
-                <a href="https://www.linkedin.com/in/kufreabasiita/"><img class="linkedin-img" src="~/imgs/Logos-Linkedin-icon.png" alt="LinkedIn Image" /></a>
-            </div>
-            <div>
-                <a href="https://twitter.com/bastion_music"><img class="twitter-img" src="~/imgs/twitter-icon.png" alt="Twitter Image" /></a>
-            </div>
-        </div>
-        <div class="container text-center">
-            &copy 2020 @Model.Logo. All Rights Reserved.
-        </div>
-    </footer>
+        </footer>
+    }
+    
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\portfolio-website\\portfolioTask\\portfolioTask.csproj": {}
+    "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\My Repo\\portfolio-website\\portfolioTask\\portfolioTask.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\portfolio-website\\portfolioTask\\portfolioTask.csproj": {
+    "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\My Repo\\portfolio-website\\portfolioTask\\portfolioTask.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\portfolio-website\\portfolioTask\\portfolioTask.csproj",
+        "projectUniqueName": "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\My Repo\\portfolio-website\\portfolioTask\\portfolioTask.csproj",
         "projectName": "portfolioTask",
-        "projectPath": "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\portfolio-website\\portfolioTask\\portfolioTask.csproj",
+        "projectPath": "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\My Repo\\portfolio-website\\portfolioTask\\portfolioTask.csproj",
         "packagesPath": "C:\\Users\\Kufreabasi Ita\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\portfolio-website\\portfolioTask\\obj\\",
+        "outputPath": "C:\\Users\\Kufreabasi Ita\\Desktop\\Coding\\Decagon Training\\Tasks\\My Repo\\portfolio-website\\portfolioTask\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kufreabasi Ita\\AppData\\Roaming\\NuGet\\NuGet.Config",

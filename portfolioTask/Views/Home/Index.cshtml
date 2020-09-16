@@ -46,9 +46,18 @@
             <ul>
                 @foreach (var item in Model.education)
                 {
-                    <li>
-                        @item.obtained at @item.schoolName (@item.startDate - @item.endDate)
-                    </li>
+                    if (item.startDate != null)
+                    {
+                        <li>
+                            @item.obtained at @item.schoolName (@item.startDate - @item.endDate)
+                        </li>
+                    }
+                    else
+                    {
+                        <li>
+                            @item.obtained at @item.schoolName (@item.endDate)
+                        </li>
+                    }
                 }
             </ul>
             <img class="edu-img" src="~/imgs/circle-cropped.png" alt="Education Image" />
