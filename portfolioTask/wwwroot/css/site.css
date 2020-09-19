@@ -72,6 +72,10 @@ body {
 }
 
 /*-----------------------my annotations-------------------------------------------*/
+html{
+    scroll-behavior: smooth;
+    
+}
 header{
     position: absolute;
     width: 100%;
